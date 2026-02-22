@@ -1,0 +1,112 @@
+{
+  "students": [
+    {
+      "id": "E0221001",
+      "name": "Abishek",
+      "semester": "1",
+      "subjects": [
+        {
+          "name": "CA1",
+          "marks": 90,
+          "maxMarks": 100
+        },
+        {
+          "name": "CA2",
+          "marks": 80,
+          "maxMarks": 100
+        },
+        {
+          "name": "CA3",
+          "marks": 82,
+          "maxMarks": 100
+        },
+        {
+          "name": "Final Assessment",
+          "marks": 90,
+          "maxMarks": 100
+        }
+      ]
+    },
+    {
+      "id": "E0221002",
+      "name": "Dhanush bala",
+      "semester": "1",
+      "subjects": [
+        {
+          "name": "CA1",
+          "marks": 72,
+          "maxMarks": 100
+        },
+        {
+          "name": "CA2",
+          "marks": 68,
+          "maxMarks": 100
+        },
+        {
+          "name": "CA3",
+          "marks": 75,
+          "maxMarks": 100
+        },
+        {
+          "name": "Final Assessment",
+          "marks": 80,
+          "maxMarks": 100
+        }
+      ]
+    },
+    {
+      "id": "E0221003",
+      "name": "Dhanush",
+      "semester": "1",
+      "subjects": [
+        {
+          "name": "CA1",
+          "marks": 92,
+          "maxMarks": 100
+        },
+        {
+          "name": "CA2",
+          "marks": 88,
+          "maxMarks": 100
+        },
+        {
+          "name": "CA3",
+          "marks": 91,
+          "maxMarks": 100
+        },
+        {
+          "name": "Final Assessment",
+          "marks": 95,
+          "maxMarks": 100
+        }
+      ]
+    },
+    {
+      "id": "E0221004",
+      "name": "Yugesh",
+      "semester": "1",
+      "subjects": [
+        {
+          "name": "CA1",
+          "marks": 91,
+          "maxMarks": 100
+        },
+        {
+          "name": "CA2",
+          "marks": 89,
+          "maxMarks": 100
+        },
+        {
+          "name": "CA3",
+          "marks": 99,
+          "maxMarks": 100
+        },
+        {
+          "name": "Final Assessment",
+          "marks": 97,
+          "maxMarks": 100
+        }
+      ]
+    }
+  ]
+}

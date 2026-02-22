@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRET Marks Portal | Check Your Marks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">SRET</span>
+        <span class="logo-text">Marks Portal</span>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="lookup-card">
+        <h1 class="lookup-title">Check Your Marks</h1>
+        <form id="lookup-form" class="lookup-form" novalidate>
+          <label for="student-id" class="visually-hidden">Student ID</label>
+          <input
+            type="text"
+            id="student-id"
+            name="id"
+            class="input-id"
+            placeholder="Enter your ID"
+            autocomplete="off"
+            required
+          />
+          <button type="submit" class="btn-submit" id="btn-submit">
+            View Marks
+          </button>
+        </form>
+        <p id="form-error" class="form-error" role="alert" hidden></p>
+      </section>
+
+      <section id="results-section" class="results-section" hidden>
+        <div class="results-card">
+          <div class="results-header">
+            <h2 id="results-name" class="results-name"></h2>
+            <div class="results-meta">
+              <span id="results-id" class="badge"></span>
+            </div>
+          </div>
+          <div class="marks-table-wrap">
+            <table class="marks-table" aria-readonly="true">
+              <thead>
+                <tr>
+                  <th>Assessment</th>
+                  <th class="num">Marks</th>
+                  <th class="num">Max</th>
+                </tr>
+              </thead>
+              <tbody id="marks-tbody">
+                <!-- Filled by JS, read-only -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="admin-section" class="admin-section" hidden>
+        <div class="admin-card">
+          <div class="admin-tools">
+            <label for="admin-search" class="visually-hidden">Search Student ID</label>
+            <input
+              type="text"
+              id="admin-search"
+              class="input-id admin-search"
+              placeholder="Search ID"
+              autocomplete="off"
+            />
+          </div>
+          <div id="admin-students-list">
+            <!-- Filled by JS with editable tables -->
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
